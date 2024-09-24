@@ -129,25 +129,30 @@ nav ul li a {
     width: 1000px;
   }
 
-
-.hero {
-    position: relative;
-    text-align: center;
-    font-size: 60px;
-    color: #ffffff;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
+.hero-content h1 {
+    font-size: 8rem; /* Large text size */
+    font-weight: 700; /* Bold text */
+    color: white; /* White text for contrast */
+    text-transform: uppercase; /* Make text all caps */
+    letter-spacing: 5px; /* Space between letters */
+    text-align: center; /* Center the text horizontally */
+    margin: 0; /* Remove default margins */
 }
 
 .hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Center the content vertically and horizontally */
+    width: 100%;
+    text-align: center; /* Center the text */
 }
+
+.hero img {
+    width: 100%; /* Ensure the background image covers the width */
+    height: auto;
+}
+
 
 
 .news-section {
