@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU Open House 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Center align the titles */
+        h3 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for FAQ buttons */
+        .faq-btn {
+            background-color: #f9c74f;
+            border: none;
+            font-size: 1.2rem;
+            padding: 15px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 30px;
+            width: 100%;
+        }
+
+        .faq-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Modal header style */
+        .modal-header {
+            background-color: #4a4a4a;
+            color: #fff;
+        }
+
+        .modal-body {
+            font-size: 1.1rem;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #4a4a4a;">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="pictures/logobu.png" alt="Bangkok University Logo" height="80">
+            </a>
+            <div class="d-flex">
+                <a class="nav-link btn-outline mx-2" href="https://openhouse.bu.ac.th/th/login">เข้าสู่ระบบ</a>
+                <a class="nav-link btn-outline mx-2" href="openhouse_english.html">ENGLISH</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pictures/banner_1.jpg" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="pictures/banner_2.jpg" class="d-block w-100" alt="Banner 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Play Like a Pro Section -->
+    <section class="text-center py-5 bg-dark text-light position-relative">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="pictures/play_like_pro.png" class="img-fluid mx-auto d-block" alt="Play Like a Pro Image" style="position: relative;">
+                    <a href="https://openhouse.bu.ac.th/th/personality-test" class="btn quiz-btn">เล่นควิซหาความโปรในตัวคุณ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Section -->
+    <section class="highlight-section py-5">
+        <div class="container">
+            <h3 style="color: #3c8ca7; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); font-size: 2.5rem">HIGHLIGHT</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="pictures/highlight_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PRO-CENTER ลองรู้จักตัวเอง</h5>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#highlight1Modal">อ่านต่อ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="pictures/highlight_2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CLUSTER CENTER ลองหาแพชชั่น</h5>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#highlight2Modal">อ่านต่อ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="pictures/highlight_3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PRO-ACTIVITIES ลองฝึกทำจริง</h5>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#highlight3Modal">อ่านต่อ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="pictures/highlight_4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PRO-CERTIFICATE ลองล่าใบเซอร์</h5>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#highlight4Modal">อ่านต่อ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Highlight 1 -->
+    <div class="modal fade" id="highlight1Modal" tabindex="-1" aria-labelledby="highlight1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="highlight1ModalLabel">PRO-CENTER ลองรู้จักตัวเอง</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="pictures/highlight_1.jpg" class="img-fluid" alt="Highlight 1">
+                    <p>จุดเริ่มต้นเส้นทางการลองที่ทุกคนจะได้เจอบริเวณอาคาร A3 เป็นจุดลงทะเบียนกลาง พร้อมให้ข้อมูลเกี่ยวกับคณะและสาขาต่าง ๆ มีรุ่นพี่แนะนำกิจกรรมไฮไลต์น่าสนใจ และตารางเวลาทั้งหมด อีกทั้งยังมีของเด็ดรอให้ไปลองเล่นคือ ‘FIND YOUR PRO-PASSION QUIZ’ ที่จะพาทุกคนรู้จักความชอบของตัวเองมากขึ้น คลัสเตอร์ไหน คณะไหนที่เหมาะกับคุณ และเป็นตัวช่วยปักหมุดเส้นทางให้ได้ไปลองเล่นที่คณะต่าง ๆ ได้ง่ายกว่าเดิม นอกจากนี้ยังมี PRO-STAGE เป็นกิจกรรมกลางไว้ให้ทุกคนได้มาเอ็นจอยกันอีกด้วย</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Highlight 2 -->
+    <div class="modal fade" id="highlight2Modal" tabindex="-1" aria-labelledby="highlight2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="highlight2ModalLabel">CLUSTER CENTER ลองหาแพชชั่น</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="pictures/highlight_2.jpg" class="img-fluid" alt="Highlight 2">
+                    <p>มาลองหาคณะที่ใช่ สาขาและกิจกรรมที่อยากลองได้ที่จุดนี้ Cluster Center จุดรวมพลของคนมี DNA เดียวกัน ไม่ว่าจะ Business Creative Innovative และ BU International ด้วย Character ที่ออกแบบมาโดยเฉพาะ ช่วยบอกตำแหน่งของแต่ละคลัสเตอร์กระจายตามที่ต่าง ๆ เป็นจุดให้ข้อมูลรายชื่อคณะ พร้อมตารางกิจกรรมในคลัสเตอร์นั้น ๆ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Highlight 3 -->
+    <div class="modal fade" id="highlight3Modal" tabindex="-1" aria-labelledby="highlight3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="highlight3ModalLabel">PRO-ACTIVITIES ลองฝึกทำจริง</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="pictures/highlight_3.jpg" class="img-fluid" alt="Highlight 3">
+                    <p>พื้นที่ของการลองเล่นเพื่อหาความโปรให้กับแพชชันที่ชอบ ด้วยกิจกรรมมากมายหลากหลายเต็มไปหมดจากคณะสาขาต่าง ๆ เปิดโอกาสให้ทุกคนที่มาเข้าร่วมได้ลองคิดจริง ลองจับอุปกรณ์จริง ลองลงมือทําจริง ได้ความรู้จากอาจารย์ตัวจริงในสาขา และเปิดโลกไปกับ Pro-Partner ของ BU ที่เชี่ยวชาญของจริง และมีรุ่นพี่คอยพูดคุย ดูแล แชร์ประสบการณ์ชีวิตมหาลัยของจริงให้ทุกคนสนุกไปด้วยกัน</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Highlight 4 -->
+    <div class="modal fade" id="highlight4Modal" tabindex="-1" aria-labelledby="highlight4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="highlight4ModalLabel">PRO-CERTIFICATE ลองล่าใบเซอร์</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="pictures/highlight_4.jpg" class="img-fluid" alt="Highlight 4">
+                    <p>อีกหนึ่งของสําคัญที่จะได้กลับไปคือ ‘E-Certificate’ ช่วยการันตีความโปรที่คุณได้ลองมากมาย ด้วยการสแกน Qr Code ที่จุดร่วมกิจกรรม เพื่อรับใบเซอร์กลับไปสะสมลงพอร์ตอัปสกิลกันอย่างปัง ๆ ได้เลย</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <h3 style="color: rgb(231, 168, 33); text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); font-size: 2.5rem">FAQ ใครมีคำถามมาค่า!</h3>
+            <div class="row justify-content-center mt-4">
+                <!-- FAQ Buttons -->
+                <div class="col-md-4 mb-3">
+                    <button class="faq-btn btn btn-block" data-bs-toggle="modal" data-bs-target="#faq1">งาน BU Open House 2024 จัดขึ้นเมื่อไหร่ และจัดที่ไหน?</button>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <button class="faq-btn btn btn-block" data-bs-toggle="modal" data-bs-target="#faq2">เข้าร่วมงานต้องลงทะเบียนไหม?</button>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <button class="faq-btn btn btn-block" data-bs-toggle="modal" data-bs-target="#faq3">เลือกลงทะเบียนเข้าร่วมกิจกรรมได้กี่คณะ?</button>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <button class="faq-btn btn btn-block" data-bs-toggle="modal" data-bs-target="#faq4">การแต่งกาย ใส่ชุดอะไรไปดี?</button>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <button class="faq-btn btn btn-block" data-bs-toggle="modal" data-bs-target="#faq5">กิจกรรมคณะต่าง ๆ เริ่มตั้งแต่กี่โมง?</button>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <button class="faq-btn btn btn-block" data-bs-toggle="modal" data-bs-target="#faq6">ทุกคณะมีเปิดบ้านทุกวันไหม?</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Template -->
+    <!-- FAQ 1 Modal -->
+    <div class="modal fade" id="faq1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">งาน BU Open House 2024 จัดขึ้นเมื่อไหร่ และจัดที่ไหน?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    มารวมตัวพร้อมกันได้ในวันที่ 29-31 สิงหาคม 2567 ณ มหาวิทยาลัยกรุงเทพ Main campus (รังสิต)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ 2 Modal -->
+    <div class="modal fade" id="faq2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">เข้าร่วมงานต้องลงทะเบียนไหม?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    สามารถลงทะเบียนเพื่อร่วมงาน BU OPEN HOUSE ล่วงหน้าได้ที่ <a href="https://openhouse.bu.ac.th/register">ลงทะเบียนที่นี่</a> หรือที่หน้างาน
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ 3 Modal -->
+    <div class="modal fade" id="faq3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">เลือกลงทะเบียนเข้าร่วมกิจกรรมได้กี่คณะ?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ลงทะเบียนครั้งเดียวแล้วเลือกเข้าร่วมกิจกรรมได้หลายคณะ!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ 4 Modal -->
+    <div class="modal fade" id="faq4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">การแต่งกาย ใส่ชุดอะไรไปดี?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    มหาวิทยาลัยกรุงเทพเราเปิดรับความหลากหลาย ทุกคนสามารถแต่งกายได้ทั้งเครื่องแบบสถาบัน หรือชุดฟรีสไตล์ของตัวเอง แต่ยังสุภาพเหมาะสมกับสถานศึกษาได้เลย
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ 5 Modal -->
+    <div class="modal fade" id="faq5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">กิจกรรมคณะต่าง ๆ เริ่มตั้งแต่กี่โมง?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    สําหรับกิจกรรมทุกคณะ จะเริ่มตั้งแต่เวลา 9.00-16.30 น. และมีต่อกับกิจกรรมสุดพิเศษช่วงเย็นสําหรับคอนเสิร์ตและโชว์วงดนตรีที่เวทีกลางบริเวณโถงอาคาร C6 หอสมุดสุรัตน์ โอสถานุเคราะห์ ตั้งแต่เวลา 17.00-20.00 น.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ 6 Modal -->
+    <div class="modal fade" id="faq6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ทุกคณะมีเปิดบ้านทุกวันไหม?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ทุกคณะจะมีกิจกรรมเปิดบ้านให้เข้าร่วมทั้ง 3 วัน สามารถเช็กตารางกิจกรรมได้ที่หน้าแรกตามแต่ละคลัสเตอร์ซึ่งบางคณะจะมีกิจกรรมไฮไลต์แต่ละวันไม่เหมือนกันอย่าลืมวางแผนเพื่อไม่ให้พลาดกิจกรรมที่ชอบนะคะ
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>9, 1 Phahonyothin Rd, Khlong Nueng, Khlong Luang, Pathum Thani 12120</p>
+                    <p>&copy; 2024 by Bangkok University</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>
+                        <a href="https://www.facebook.com/bangkokuniversity" class="footer-link">
+                            <i class="fab fa-facebook"></i> Bangkok University
+                        </a><br>
+                        <a href="https://www.facebook.com/BUONLINEWORKSHOP" class="footer-link">
+                            <i class="fab fa-facebook"></i> BU Workshop
+                        </a><br>
+                        <a href="https://www.instagram.com/bangkok_bu/" class="footer-link">
+                            <i class="fab fa-instagram"></i> @Bangkok_BU
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
