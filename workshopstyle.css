@@ -88,7 +88,7 @@
 /* ============================== */
 /* ส่วนของพื้นหลัง workshop */
 .workshop-title-section {
-    background-image: url('pictures\banner_workshop.png'); /* ใส่ชื่อไฟล์ที่ถูกต้อง */
+    background-image: url('pictures/banner_workshop.png'); /* ใส่ชื่อไฟล์ที่ถูกต้อง */
     background-size: cover;
     background-position: center;
     height: 400px;
