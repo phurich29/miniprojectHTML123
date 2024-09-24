@@ -250,13 +250,22 @@ nav ul li a:hover {
 .news-card:hover {
     transform: translateY(-5px);
 }
-/* Footer Section /
-/ ============================== */
+/* Footer Section */
 .footer-section {
     background-color: #4a4a4a;
     color: white;
     padding: 22px 53px;
-   
+}
+
+.footer-container {
+    display: flex;              /* Enable flexbox for alignment */
+    justify-content: space-between; /* Space out the columns */
+    align-items: center;        /* Align content vertically */
+    flex-wrap: wrap;            /* Ensure responsiveness */
+}
+
+.footer-left, .footer-right {
+    flex: 1;                    /* Allow each column to take equal space */
 }
 
 .footer-link {
@@ -272,6 +281,23 @@ nav ul li a:hover {
     margin-right: 8px;
     font-size: 1.2rem;
 }
-.text-end {
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right p {
     text-align: right;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;  /* Stack items on smaller screens */
+        text-align: center;
+    }
+
+    .footer-right p {
+        text-align: center;
+    }
 }
