@@ -1,0 +1,22 @@
+header {
+    background-color: silver;
+    border-radius: 15px; /* Adjust this value */
+    padding: 15px; /* Optional padding */
+}
+body {
+    background-color: #d3d3d3; /* Light grey */
+}
+
+.font{
+    font-family: Inconsolata;
+}
+
+.custom-sponsor {
+    width: 170px;
+    height: 170px;
+  }
+
+.spon:hover {
+    background-color: #D3D3D3;
+    opacity: 0.5;
+    }
