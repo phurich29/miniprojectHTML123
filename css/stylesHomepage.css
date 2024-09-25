@@ -341,7 +341,7 @@ input, button {
     font: inherit;
 }
 
-input { width: 100%; }
+/* input { width: 100%; } */
 
 button { cursor: pointer; }
 
@@ -464,7 +464,7 @@ body {
     color: var(--white);
     font-family: var(--ff-league_spartan);
     font-size: var(--fs-);
-    font-weight: var(--fw-600);
+    font-weight: var(--fw-700);
     margin-block-end: 10px;
 }
 
