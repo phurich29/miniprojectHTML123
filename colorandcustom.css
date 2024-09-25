@@ -81,13 +81,32 @@
   
   }
   
-.header {
+  .header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #111;
-    padding: 0px 0px;
-}
+    justify-content: space-between; /* จัดตำแหน่งซ้าย-ขวา */
+    align-items: center; /* จัดให้ตัวอักษรอยู่ตรงกลางแนวแกน y */
+    padding: 10px 20px; /* เพิ่ม padding เพื่อให้ข้อความไม่ชิดขอบ */
+    background-color: #111; /* สีพื้นหลัง */
+  }
+  
+  .left-text, .right-text {
+    color: white; /* สีของข้อความ */
+    font-size: 17.5px; /* ขนาดตัวอักษร */
+    font-family: 'Poppins', sans-serif; /* ฟอนต์ */
+    font-weight: bold; /* น้ำหนักตัวอักษร */
+  }
+  
+  .right-text {
+    text-align: right; /* จัดตำแหน่งข้อความ "Telecom" ทางขวา */
+    
+  }
+  
+  .left-text {
+    text-align: left; /* จัดตำแหน่งข้อความ "National" ทางซ้าย */
+    padding: 10px 20px;
+  }
+  
+  
 
 .navbar-left {
     background-color: white;
@@ -237,6 +256,13 @@ body {
     opacity: 0.5;
     }
 
+
+
+
+
+
+
+    
     :root {
       /* colors */
       --selective-yellow: hsl(42, 94%, 55%);
@@ -341,7 +367,7 @@ body {
   
   body {
       background-color: var(--white);
-      color: var(--gray-web);
+      color: hsl(0deg 0% 100%);
       font-size: 1.6rem;
       line-height: 1.75;
   }
