@@ -92,32 +92,61 @@ body {
     padding: 20px;
 }
 
-/* Footer Section */
 .footer-section {
-    background-color: #4a4a4a; /* สีพื้นหลังให้เหมือน header */
-    color: white; /* สีฟอนต์เป็นสีขาว */
-    padding: 20px 0;
+    background-color: #1c1c1c; /* สีพื้นหลังของ footer */
+    color: #ffffff; /* สีตัวอักษร */
+    padding: 40px 0;
 }
 
-.footer-link {
-    color: white; /* สีลิงก์เป็นสีขาว */
-    text-decoration: none;
+.footer-section img {
+    margin-bottom: 20px;
+}
+
+.footer-section h5 {
+    color: #ffffff; /* สีหัวข้อ */
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.footer-link:hover {
-    color: #d3d3d3; /* เปลี่ยนสีเมื่อ hover */
+.footer-section ul {
+    padding: 0;
 }
 
-.footer-section .text-end {
-    text-align: right;
+.footer-section ul li {
+    list-style: none;
 }
 
-.footer-section i {
-    margin-right: 8px;
-    font-size: 1.2rem;
+.footer-section ul li a {
+    color: #d3d3d3; /* สีลิงก์ */
+    text-decoration: none;
 }
 
+.footer-section ul li a:hover {
+    color: #e6b81a; /* สีลิงก์เมื่อ hover */
+}
 
+.footer-section form {
+    display: flex;
+}
 
+.footer-section input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.footer-section button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #20C997; /* สีปุ่ม subscribe */
+    color: white;
+    cursor: pointer;
+}
+
+.footer-section button[type="submit"]:hover {
+    background-color: #1FA786; /* สีปุ่มเมื่อ hover */
+}
 
